@@ -291,7 +291,7 @@ li.logo span {
 }
 
 .container {
-  width: 95%;
+  width: 100%;
 }
 
 h3 {
@@ -384,7 +384,18 @@ body {
   font-size: 2.5rem;
   font-family: 'Caveat', cursive;
 }
-
+.title3 {
+  font-size: 1.5rem;
+  font-family: 'Caveat', cursive;
+}
+.title4 {
+  font-size: 1.2rem;
+  font-family: 'Mate', cursive;
+}
+.title5 {
+  font-size: 2.2rem;
+  font-family: 'Bungee Spice', sans-serif;
+}
 .wrapper {
   animation: scroll 90s linear infinite;
   background: url("https://fudongone.github.io/assets/img/homep1.avif"), #111111;
@@ -434,14 +445,14 @@ body {
 }
 
 .card {
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 
 .card .role {
   font-size: 1.25rem;
   position: absolute;
-  right: 38px;
-  top: 35px;
+  right: 18px;
+  top: 15px;
 }
 
 .card li a {
