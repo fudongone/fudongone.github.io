@@ -356,6 +356,7 @@ h3 {
 }
 
 .overlay {
+  background-image: url("https://fudongone.github.io/assets/img/greatwave.jpeg");
   background-color: rgba(0, 0, 0, 0.4);
   height: 100%;
   left: 0;
