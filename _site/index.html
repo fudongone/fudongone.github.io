@@ -37,7 +37,9 @@
     gtag('config', 'UA-104299470-2');
   </script>
 
-
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
@@ -194,12 +196,12 @@
       <div class="wrapper"></div>
       <div class="container">
         <div class="col-md-9">
-          <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
+          <div class="content section-padding valign" style="margin-left: 5%; margin-top: 50px;">
             <div class="caption">
               <h2>Hi, I'm <span class="title">Fudong Wang.</span></h2>
               <!-- <h5 style="color:#fff">A <span class="typing" style="font-weight: 300; color:#12e39d"></span></h5> -->
               <!-- <h5 style="color:#00796b">A <span class="typing" style="font-weight: 300; color:#fff"></span></h5> -->
-              <h5> <span class = "title2">My research is mainly focusing on applying complex analytic methods to solve problems coming from mathematical physics which are related to <a style="color: cadetblue;">soliton theory</a>, <a style="color: cadetblue;">random matrices</a> and <a style="color: cadetblue;">orthogonal polynomial</a>. In particular, I am interested in asymptotic analysis with a large parameters by applying <a style="color: cadetblue;">Riemann-Hilbert problems</a> and <a style="color: cadetblue;">nonlinear steepest descent method</a>.</span></h5>
+              <h5> <span class = "title2">My research is mainly focusing on applying complex analytic methods to solve problems coming from mathematical physics which are related to <a style="color: cadetblue;">soliton theory</a>, <a style="color: cadetblue;">random matrices</a> and <a style="color: cadetblue;">orthogonal polynomial</a>. In particular, I am interested in asymptotic analysis with a large parameter by applying <a style="color: cadetblue;">Riemann-Hilbert problems</a> and <a style="color: cadetblue;">nonlinear steepest descent method</a>.</span></h5>
             </div>
             <div class="social">
               <a href="http://linkedin.com/in/fudong-wang-b0540914a/" target="_blank">
@@ -237,7 +239,9 @@
             A Software Developer with a passion for Backend Development and Artificial Intelligence.
 
           </h2>
-        </blockquote> -->        
+        </blockquote> -->      
+        <div class="card">
+          <div class="card-content">  
         <p>
           I am dedicated to research in mathematical physics and applied analysis. In particular, I am interested
 in applying analytical tools to study nonlinear integrable PDEs and to understand the physics phenomenon behind
@@ -251,12 +255,14 @@ period, I mainly consider the spectral theory arising in the study of KdV and fN
         </p>
         <p>
           <ul>
-            <li><b>Keywords:</b></li>
+            <b>Keywords:</b>
             <li><b>Current :</b> Soliton/Breather gas, Finite-gap solution, Rogue waves, Modulation Instability, Riemann-Hilbert problem, Singular Integral equations</li>
             <li><b>Future:</b> Orthogonal Polynomial, Random Matrices, Potential theory, Complex analysis, Free boundary problem.</li>
           </ul>
           
         </p>
+      </div>
+    </div>
           
         <!-- <p>
           
@@ -342,6 +348,9 @@ period, I mainly consider the spectral theory arising in the study of KdV and fN
     <section id="publications" class="section scrollspy">
       <h3 class="page-title white-text teal">Publications</h3>
       <div class="container">
+
+        <div class="card">
+          <div class="card-content">
         <div class="row">
           <ol start="1">
             <li><span class="title4">Recent developments in spectral theory of the focusing NLS soliton and breather gases: the
@@ -349,7 +358,7 @@ thermodynamic limit of average densities, fluxes and certain meromorphic differe
 <b>Journal of Physics A </b>, 2022. (with Alexander Tovbis)</li>
             <li><span class="title4">A \(\bar\partial\)-Steepest Descent Method for Oscillatory Riemann–Hilbert Problems,</span> <b>Journal of Nonlinear Science</b>,
 2022. (with Wen-Xiu Ma)</li>
-            <li><span class="title4">A Note on Electrified Droplets,<b> Computational Methods and Function Theory</b>, 2021.(with Nathan
+            <li><span class="title4">A Note on Electrified Droplets,</span><b> Computational Methods and Function Theory</b>, 2021.(with Nathan
 Hayford)</li>
             <li><span class="title4">Inverse scattering transforms for non-local reverse-space matrix non-linear Schrödinger equations,</span>
 <b>European Journal of Applied Mathematics</b>, 2021. (with Wen-Xiu Ma, Yehui Huang)</li>
@@ -360,6 +369,8 @@ hierarchies, </span><b>Studies in Applied Mathematics</b>, 2020. (with Wen-Xiu M
           </ol>
 
         </div>
+      </div>
+    </div>
       </div>
 </section>
 
@@ -479,7 +490,34 @@ hierarchies, </span><b>Studies in Applied Mathematics</b>, 2020. (with Wen-Xiu M
           <div class="card-content">
             <h4 class="brown-text light">On Going Projects</h4>
             <div class="row text-center">
-              To be filled
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-content">
+            <h4 class="brown-text light">Past Projects</h4>
+            <div class="row text-left">
+              The main object of my dissertation research is the AKNS hierarchy:
+\begin{align*}
+% \label{lax pair AKNS}
+  \psi_x=\begin{pmatrix}
+  iz& p(x,t)\\
+  q(x,t)& -iz
+  \end{pmatrix}\psi,\quad \psi_t=\sum_{j=1}^nV(p,q)z^j,
+\end{align*}
+where \(\psi(z;x,t)\in GL(2;\mathbb{C};\mathbb{R},\mathbb{R}_+)\). We are mainly interested in studying the long-time (\(t\rightarrow\infty\)) behaviors of the potential \(p(x,t)\) in different sectors of the \((x,t)\) plane. Through Riemann-Hilbert formulations (one modern way of formulating inverse scattering problems), we then apply so-called \(\bar\partial\)-steepest descent method (a variant of the famous Deift-Zhou's nonlinear steepest descent method) to derive the explicit asymptotics in three regions (namely, fast decaying region, Painlevé region, fast oscillating region) in the \((x,t)\) plane. And in each region, the error estimates are also provided. In particular, in the Painlevé region, the asymptotic solutions to the mKdV hierarchy (the odd part of AKNS hierarchy) are associated to the Painlevé II hierarchy. The details are presented in this paper by Ma and Myself.
+<br>
+<div class="row text-center"><img src="../../assets/img/NewPhysicalDroplet2.jpeg" alt="Droplet" style="width:500px;height:600px;"></div>
+<br>
+Besides the main project, I also want to mention a side project which emphasizes on complex analysis. Consider a droplet in a electric field (as presented by a complex potential \(g\)), the equilibrium state of the droplet results in the following free-boundary problem satisfied on the boundary (to be determined):
+\begin{equation*}
+      \int^z (g'(s))^2 ds = p \bar{z} + i \tau \dot{\bar{z}},
+    \end{equation*}
+      where ``dot" here represents the derivative with respect to arc length, and for  positive constants \(p\) 
+  (representing the strength of the pressure force), \(\tau\) (representing the strength of the
+  force due to surface tension). The task is to find solutions to the free boundary problem. Our result provides a family of solutions (so-called physical  droplets, see the Figure in the middle, where a family of physical droplets is presented.). More details are presented in the paper by Hayford and myself.
             </div>
           </div>
         </div>

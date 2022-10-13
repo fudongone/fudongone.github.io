@@ -200,7 +200,7 @@ nav i {
 } */
 
 main {
-  background: url(../../assets/img/bg.png) repeat;
+  /*background: url(../../assets/img/homep1.avif) repeat;*/
   padding-left: 190px;
 }
 
@@ -342,7 +342,7 @@ h3 {
 #intro.section .container *:not(span) {
   font-weight: 300;
   /* font-weight: 400; */
-  line-height: 150%;
+  line-height: 1.2;
   /* padding: 0 0px; */
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
@@ -393,7 +393,7 @@ body {
   font-family: 'Mate', cursive;
 }
 .title5 {
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-family: 'Bungee Spice', sans-serif;
 }
 .wrapper {
@@ -404,11 +404,12 @@ body {
   height: 100vh;
   min-width: 360px;
   width: 100%;
-  display: flex;
+  /*display: flex;*/
   justify-content: center;
   align-items: center;
   perspective: 1000px;
-  perspective-origin: 50% 50%;
+  /*perspective-origin: 50% 50%;*/
+  position: absolute;
   
 }
 
