@@ -81,29 +81,48 @@
 
 /* Buttons - Read Me, Contact Us */
 
-.readme {
+.mybutton {
+    background-color: #c2fbd7;
+    border-radius: 100px;
+    box-shadow: rgb(44 187 99 / 20%) 0 -25px 18px -14px inset, rgb(44 187 99 / 15%) 0 1px 2px, rgb(44 187 99 / 15%) 0 2px 4px, rgb(44 187 99 / 15%) 0 4px 8px, rgb(44 187 99 / 15%) 0 8px 16px, rgb(44 187 99 / 15%) 0 16px 32px;
+    color: red;
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+    padding: -4px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+/*.mybutton {
   position: relative;
-  padding: 11px 35px;
+  padding: 11px 25px;
   background: none;
-  color: #fff;
+  color: #fafafa;
   border: 2px solid #fff;
-  font-weight: 600;
+  font-weight: 300;
   font-size: 15px;
   letter-spacing: 1px;
   display: inline-block;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
 }
 
- .readme:hover{
+ .mybutton:hover{
   color: #00796b;
-  background-color: white;
-} 
+  background-color: red;
+} */
 
 .contactme {
   position: relative;
   padding: 11px 35px;
-  background: none;
+  background: #073365;
   color: #fff;
   border: 2px solid #fff;
   font-weight: 600;
@@ -124,9 +143,18 @@
 /* body-color */
 
 body {
-  color: #333;
-  font-size: 18px;
+    color: #333;
+    font-size: 18px;
+    background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+   background-position: top;
+   background-image:url(../../assets/img/greatwave.jpeg);
 }
+
+
+
+
 
 /* body {
   color: black;
@@ -291,7 +319,7 @@ li.logo span {
 }
 
 .container {
-  width: 100%;
+  width: 90%;
 }
 
 h3 {
@@ -320,14 +348,15 @@ h3 {
 } */
 
 #intro.section {
-  background: #a7ffeb repeat;
+  background: #fafafa repeat;
   position: relative;
 }
 
 #intro.section .container {
-  color: white;
-  font-weight: 200;
-  left: 0;
+  color: #000000;
+  font-weight: 300;
+  left: 0pt;
+  /*right: 90pt;*/
   position: absolute;
   top: -20pt;
 }
@@ -344,7 +373,7 @@ h3 {
   /* font-weight: 400; */
   line-height: 1;
   /* padding: 0 0px; */
-  text-shadow: 1px 1px 5px rgba(121, 44, 0, 0.7);
+  text-shadow: 1px 1px 5px rgba(121, 44, 0, 0.9);
 }
 
 #intro.section .underline {
@@ -356,9 +385,11 @@ h3 {
 }
 
 .overlay {
-  background-image: url(../../assets/img/greatwave2.jpg);
+  background-image: url(../../assets/img/starynight.jpeg);
   /*background: url(../../assets/img/white-ai-wallpaper.jpg);*/
   /*opacity: 0.75;*/
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
   background-position: center;
   /*background-color: rgba(0, 0, 0, 0.4);*/
   background-repeat: no-repeat; /* Do not repeat the image */
@@ -382,20 +413,24 @@ body {
 }
 
 .title2 {
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   font-family: 'Caveat', cursive;
 }
 .title3 {
   font-size: 1.5rem;
-  font-family: 'Caveat', cursive;
+  font-family: 'Mate', cursive;
 }
 .title4 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-family: 'Mate', cursive;
 }
 .title5 {
   font-size: 2rem;
   font-family: 'Bungee Spice', sans-serif;
+}
+.title6 {
+  font-size: 2.2rem;
+  font-family: 'Mate', cursive;
 }
 .wrapper {
   animation: scroll 90s linear infinite;
@@ -414,6 +449,11 @@ body {
   
 }
 
+
+
+
+
+
 @keyframes scroll {
    100%{
     background-position:0px -3000px;
@@ -428,22 +468,16 @@ body {
 
 @media (min-width: 670px) {
   .title {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
-
-
-
-
-
-
 
 
 
 .waves-effect.waves-blue .waves-ripple {
   /* The alpha value allows the text and background color
    of the button to still show through. */
-  background-color: rgba(33, 150, 243, 0.4);
+  background-color: rgba(33, 150, 243, 0.7);
 }
 
 .card {
@@ -491,7 +525,7 @@ body {
 }
 
 #talks .card-action {
-  background-color: rgba(0, 0, 0, 0.02);
+  background-color: rgba(0, 0, 0, 0.2);
   border: none;
 }
 
@@ -626,7 +660,7 @@ small {
 /* main .teal-text */
 
 .teal-text {
-  color: #008073 !important;
+  color: #073365 !important;
 }
 
 /* .teal-text {
@@ -636,7 +670,7 @@ small {
 /* .teal */
 
 .teal {
-  background-color: #e26060 !important;
+  background-color: #073365 !important;
 }
 
 /* .teal {
@@ -645,7 +679,7 @@ small {
 
 @media (min-width: 1200px) {
   #talks .container {
-    width: 860px;
+    width: 90%;
   }
 }
 
@@ -769,3 +803,7 @@ small {
     background-position-x: 30%;
   }
 }
+
+
+
+
