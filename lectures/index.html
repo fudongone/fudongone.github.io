@@ -511,15 +511,9 @@
 MathJax.Hub.Config({
   tex2jax: {
     inlineMath: [['$','$'], ['\\(','\\)']],
-    processEscapes: true,
-    equationNumbers: { autoNumber: "AMS" }
+    processEscapes: true
   }
 });
-MathJax.Hub.Queue(
-  ["resetEquationNumbers", MathJax.InputJax.TeX],
-  ["PreProcess", MathJax.Hub],
-  ["Reprocess", MathJax.Hub]
-);
 </script>
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
