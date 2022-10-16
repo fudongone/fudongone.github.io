@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+    <entry>
+      <title><![CDATA[A note on d-bar inverse scattering]]></title>
+      <url>/projects/2022/10/15/D-bar/</url>
+      <content type="text"><![CDATA[      Beals-Coifman&rsquo;s dbar problemIn what follows, we simply copy the main results from Beals-Coifman-1986.Let&rsquo;s consider a linear spectral problem:\begin{align}D_zm(z,x)\equiv (\partial_x+z\hat J)m=q(x)m,\label{spectral}\end{align}where $\hat J=[J,\cdot]$, $z$ is a spectral variable, $q(x)$ is an off-diagonal matrix with complex-valued function entries defined on whole real line[Q1: How to generalize it to periodic case?], and $m$ is a matrix-valued function. In what follows, we also assume $q(x)$ vanishes as $x\rightarrow\infty$.Now let&rsquo;s introduce so-called $\bar\partial$ operator. Given any function $f(z)\in C^1(z,\bar z)$, we have$$df=\partial fdz+\bar\partial fd\bar z,$$where, if $z=x+iy$, then\begin{align}\partial \equiv \frac{\partial}{\partial  z}=\frac{1}{2}(\partial_x-i\partial_y)  ,\\\bar\partial \equiv \frac{\partial}{\partial \bar z}=\frac{1}{2}(\partial_x+i\partial_y). \label{ss}\end{align}Moreover, the dbar derivative  makes sense for distributions too. From the Cauchy-Riemann equations, it is evident that dbar annihilate all holomorphic functions. Apply Green&rsquo;s formula, one can easily show that $\frac{1}{\pi z}$ is a fundamental solution for $\bar \partial$. We also have that if $f$ is holomorphic off some &ldquo;nice&rdquo; simple oritented curve $\Sigma$, and the left/right boundary valued $f_\pm$ exist, then$$\bar\partial f=\frac{i}{2}(f_+-f_-).$$Exercise: Prove all the mentioned properties about dbar operator in the sense of distribution.Back to the linear spectral problem, since $D_z$ is holomorphic with respect to $z$, $[D_z,\bar\partial]=0$. Thus, applying dbar derivative, we have$$D_z\bar\partial m=q\bar\partial m.$$Since the system is of first order (derivative), two different solutions are connected by a constant matrix (in classical scattering theory, that is called scattering matrix.) With this intuition, one can show that$$\bar\partial m=mv,$$where $D_zv=0$.(Here $v=v(x,z)$!)The above process can be considered as direct scattering, i.e. from potential $q$ to scattering data $v$.Next, consider the inverse scattering problem. Suppose $m$ solves the dbar problem with some $v\in \text{Ker}(D_z)$, we now derive a formula to recovery the potential $q$ from the scattering data $v$.Using the fundamental solution (w.r.t Lebesgue measure) of dbar, we can transfer the dbar problem to an singular integral equation:$$m=I+CTm,$$where $Cf=(\frac{1}{\pi z}*f)(z)$ and $Tf=fv$. (Note: this Cauchy operator is with respect to area measure.)Now let&rsquo;s compute $D_zm$. In fact, we have\begin{align*}D_zm &amp; =D_z(1-CT)^{-1}I\\&amp;=[D_z,(1-CT)^{-1}]I\quad (\text{using the fact that $D_zI=0$})\\&amp;=(1-CT)^{-1}[D_z,CT]m\quad (\text{since $(1-b) [a,(1-b)^{-1}] (1-b)=[a,b]$ })\\&amp;=(1-CT)^{-1}[D_z,C]Tm\quad (\text{since $[D_z,T]=0$})\\&amp;=(1-CT)^{-1}[z,C]\hat J Tm\\&amp;=( [z,C] \hat J Tm)m \quad (\text{using the magic property of the operator $ [z,C] $}).\end{align*}From the last step, we see if we set $q=[z,C] \hat J Tm$, we recovery the potential from the scattering data $v$.To get a hierarchy of integrable system then is trivial. We will skip it here.Zahkarov-Manakov&rsquo;s dressing methodOne should compare this method with Dyachenkoa-Zakharov-Zakharov&rsquo;s paper on primitive potential technique.In DZZ paper, they consider following scalar dbar problem:$$\bar \partial \chi=ie^{2ikx}T(k)\chi(-k),$$where $T(k)$ is a compactly supported distribution, so-called dressing function (following Zakharov-Manakov-1985).(Intuitively, by put some symmetries on the dressing function, one can reduce from Beals-Coifman&rsquo;s scheme to Zakharov-Manakov&rsquo;s dressing method. Under construction)Application (more details coming soon/or never)Primitive potential, see Zakharov-ZakharovSoliton gas w.r.t. a curve spectral data, see Tovbis-ElSoliton gas w.r.t. a compact region spectral data, see Bertola-Grava-Orsatti    ]]></content>
+      <categories>
+        
+          <category> Projects </category>
+        
+      </categories>
+      <tags>
+        
+          <tag> inverse scattering </tag>
+        
+          <tag> dbar </tag>
+        
+          <tag> soliton </tag>
+        
+      </tags>
+      <tags></tags>
+    </entry>
+  
+    <entry>
+      <title><![CDATA[About me and my research]]></title>
+      <url>/myself/2022/10/15/About-Me/</url>
+      <content type="text"><![CDATA[My name is Fudong Wang. I am currently working as a postdoc at UCF (supervised by Alexander Tovbis). My dissertation mentor is Wen-Xiu Ma. My research interests include classical soliton theory ( inverse scattering, long-time asymptotics) and (currently) spectral theory of soliton/breather gases. Besides the integrable system, I am also interested in any fields related to the following keywords: Riemann-Hilbert problems, random matrices, orthogonal polynomial, probability theory, potential theory, asymptotic analysis, singular integral equations and approximation theory.I am dedicated to research in mathematical physics and applied analysis. In particular, I am interested in applying analytical tools to study nonlinear integrable PDEs and to understand the physics phenomenon behind those PDEs. The Korteweg–De Vries equation (KdV) and the focusing Nonlinear Schrödinger equation (fNLS) are two important examples among them. Both KdV and fNLS are considered as universal mathematical models describing physics phenomena of nonlinear waves. Thus, many applications can be found in many other fields such as oceanography, nonlinear optical, shallow water wave, and so on. My Ph.D study mainly focuses on the long-time asymptotics of a family of integrable PDEs using some recently developed asymptotics analysis techniques (namely, matrix Riemann-Hilbert problems, nonlinear steepest descent method,  $\bar\partial$-steepest descent method.). While during my postdoctoral period, I mainly consider the spectral theory arising in the study of KdV and fNLS soliton gas.]]></content>
+      <categories>
+        
+          <category> Myself </category>
+        
+      </categories>
+      <tags>
+        
+          <tag> soliton gas </tag>
+        
+          <tag> fNLS </tag>
+        
+          <tag> soliton </tag>
+        
+      </tags>
+      <tags></tags>
+    </entry>
+  
+    <entry>
+      <title><![CDATA[Projects]]></title>
+      <url>/projects/2022/10/15/Proj/</url>
+      <content type="text"><![CDATA[On-going ProjectsMy current research at UCF is concentrated on the spectral theory of certain nonlinear integrable PDEs (fNLS and KdV in particular). It is well-known that solitons and breathers (two types of special solutions) represent localized solutions to many integrable system. We are interested in studying the statistical ensembles of solitons/breathers, which are so-called soliton/breather gases. The study of soliton/breather gases provides a possibility to understand one of the most intriguing phenomena of modern science - turbulence in dynamical systems[see Za2009].                             In one project, we consider fNLS soliton/breather gas.  We derive average densities and fluxes for such gases by studying the thermodynamic limit of the fNLS finite gap solutions. One of the central objects in the spectral theory of soliton/breather gases is the nonlinear dispersion relation integral equation (NDR):              where  $R_0(z)=\sqrt{z^2-\delta_0^2}$ with the branchcut $\gamma_0=[-\delta_0,\delta_0]\subset i\mathbb{R}$ being the exceptional (permanent) band, $\Gamma^+\subset \mathbb{C}^+\setminus \gamma_0$ is a compact,             $z\in\Gamma^+$, $\sigma$ is a continuous non negative function on $\Gamma^+$            and $\lambda$ is some reference measure (arclength measure if $\Gamma^+$ is a contour, area measure if $\Gamma^+$ is a 2D region) on $\Gamma^+$ that            reflects the density of accumulating in the thermodynamic limit            bands. In the case of $\delta_0=0$ the fNLS breather gas reduces to the            fNLS soliton gas with the NDR given by removing the blue parts in the breather NDR. The solution $u(z)$ to the first NDR (assuming the existence) is called density of states, which plays a fundamental role in our project. With the help of finite-gap theory, we established the following results:      Computing the averaged conserved quantities (i.e., the densities and fluxes) under thermodynamic limit.    For example, in the soliton gas case, the averaged densities can be computed by the following elegant formula:        where  $u$ is the density of states, and $I_m$ denotes the averaged density that is associate with the coefficient of the expansion of quasimomentum differential:        In the paper [TW2022], we present the formulae of computing averaged densities for fNLS breather gases. The results provide certain statistical properties of the soliton/breather ensembles.        Motivated by some formal WKB analysis results on the periodic Zakharov-Shabat operator, we solve the first NDR  equation explicitly in both breather and soliton gas limit cases. We call them periodic gases. In the periodic gases case, the density of state is represented by the following formula:        where $q(x)$ is some periodic function as the potential in the Zakharov-Shabat operator. One surprising result is that $u$ is proportional to the density function of the centers of the bands (the spectra of the periodic Zakharov-Shabat operator).        We established some fundamental error estimates in the thermodynamic-type limit. Specifically speaking, we give the large N leading behavior of certain differentials defined on the genus 2N Riemann surface. And those error estimates provide a rigorous mathematical foundation of deriving the NDR equations as well as of computing the averaged conserved quantities. Our results constitute another step towards the mathematical foundation for the spectral theory of fNLS soliton and breather gases that appeared in work of G. El and A. Tovbis\cite{ET2020}.[This project is joint work with Alexander Tovbis.]  Past ProjectsThe main object of my dissertation research is the AKNS hierarchy:where $\psi(z;x,t)\in GL(2;\mathbb{C};\mathbb{R},\mathbb{R}_+)$. We are mainly interested in studying the long-time ($t\rightarrow\infty$) behaviors of the potential $p(x,t)$ in different sectors of the $(x,t)$ plane. Through Riemann-Hilbert formulations (one modern way of formulating inverse scattering problems), we then apply so-called $\bar\partial$-steepest descent method (a variant of the famous Deift-Zhou’s nonlinear steepest descent method) to derive the explicit asymptotics in three regions (namely, fast decaying region, Painlevé region, fast oscillating region) in the $(x,t)$ plane. And in each region, the error estimates are also provided. In particular, in the Painlevé region, the asymptotic solutions to the mKdV hierarchy (the odd part of AKNS hierarchy) are associated to the Painlevé II hierarchy. The details are presented in this paper by Ma and Myself.Besides the main project, I also want to mention a side project which emphasizes on complex analysis. Consider a droplet in a electric field (as presented by a complex potential $g$), the equilibrium state of the droplet results in the following free-boundary problem satisfied on the boundary (to be determined):where “dot” here represents the derivative with respect to arc length, and for  positive constants $p$(representing the strength of the pressure force), $\tau$ (representing the strength of theforce due to surface tension). The task is to find solutions to the free boundary problem, i.e., find $z=z(s)$, s is in the unit disc,  and $F(z)$ satisfying the stated equation as well as  the physical condition that $\sqrt{F’(z)}$ is single-valued. Our result provides a family of solutions (so-called physical  droplets, see the Figure in the middle, where a family of physical droplets is presented.). More details are presented in the paper by Hayford and myself.]]></content>
+      <categories>
+        
+          <category> Projects </category>
+        
+      </categories>
+      <tags>
+        
+          <tag> soliton gas </tag>
+        
+          <tag> fNLS </tag>
+        
+          <tag> soliton </tag>
+        
+      </tags>
+      <tags></tags>
+    </entry>
+  
+    <entry>
+      <title><![CDATA[Publications]]></title>
+      <url>/publications/2022/10/15/Publications/</url>
+      <content type="text"><![CDATA[      Recent developments in spectral theory of the focusing NLS soliton and breather gases: the thermodynamic limit of average densities, fluxes and certain meromorphic differentials; periodic gases, Journal of Physics A , 2022. (with Alexander Tovbis)        A $\bar\partial$-Steepest Descent Method for Oscillatory Riemann–Hilbert Problems, Journal of Nonlinear Science, 2022. (with Wen-Xiu Ma)        A Note on Electrified Droplets, Computational Methods and Function Theory, 2021.(with Nathan     Hayford)        Inverse scattering transforms for non-local reverse-space matrix non-linear Schrödinger equations, European Journal of Applied Mathematics, 2021. (with Wen-Xiu Ma, Yehui Huang)        Inverse scattering transforms and soliton solutions of nonlocal reverse-space nonlinear Schrödinger hierarchies, Studies in Applied Mathematics, 2020. (with Wen-Xiu Ma, Yehui Huang)        Lump solutions to nonlinear PDEs involving Hirota derivative $D^2_tD_xD_y$, Modern Physics Letters B, 2020. (with Wen-Xiu Ma)  ]]></content>
+      <categories>
+        
+          <category> Publications </category>
+        
+      </categories>
+      <tags>
+        
+          <tag> soliton gas </tag>
+        
+          <tag> fNLS </tag>
+        
+          <tag> soliton </tag>
+        
+      </tags>
+      <tags></tags>
+    </entry>
+  
+    <entry>
+      <title><![CDATA[MathJax with Jekyll]]></title>
+      <url>/opinion/2014/02/16/Mathjax-with-jekyll/</url>
+      <content type="text"><![CDATA[One of the rewards of switching my website to Jekyll is theability to support MathJax, which means I can write LaTeX-like equations that getnicely displayed in a web browser, like this one \( \sqrt{\frac{n!}{k!(n-k)!}} \) orthis one \( x^2 + y^2 = r^2 \). $h^3$What’s MathJax?If you check MathJax website (www.mathjax.org) you’ll seethat it is an open source JavaScript display engine for mathematics that works in allbrowsers.How to implement MathJax with JekyllI followed the instructions described by Dason Kurkiewicz forusing Jekyll and Mathjax.Here are some important details. I had to modify the Ruby library for Markdown inmy _config.yml file. Now I’m using redcarpet so the corresponding line in theconfiguration file is: markdown: redcarpetTo load the MathJax javascript, I added the following lines in my layout post.html(located in my folder _layouts)&lt;script type="text/javascript"    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"&gt;&lt;/script&gt;Of course you can choose a different file location in your jekyll layouts.Note that by default, the tex2jax preprocessor defines theLaTeX math delimiters, which are \\(...\\) for in-line math, and \\[...\\] fordisplayed equations. It also defines the TeX delimiters $$...$$ for displayedequations, but it does not define $...$ as in-line math delimiters. To enable in-line math delimiter with $...$, please use the following configuration:&lt;script type="text/x-mathjax-config"&gt;MathJax.Hub.Config({  tex2jax: {    inlineMath: [['$','$'], ['\\(','\\)']],    processEscapes: true  }});&lt;/script&gt;&lt;script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"&gt;&lt;/script&gt;A Couple of ExamplesHere’s a short list of examples. To know more about the details behind MathJax, you canalways checked the provided documentation available athttp://docs.mathjax.org/en/latest/Let’s try a first example. Here’s a dummy equation:How do you write such expression? Very simple: using double dollar signs$$a^2 + b^2 = c^2$$To display inline math use \\( ... \\) like this \\( sin(x^2) \\) which getsrendered as \( sin(x^2) \)Here’s another example using type \mathsf$$ \mathsf{Data = PCs} \times \mathsf{Loadings} $$which gets displayed asOr even better:\\[ \mathbf{X} = \mathbf{Z} \mathbf{P^\mathsf{T}} \\]is displayed as\[ \mathbf{X} = \mathbf{Z} \mathbf{P^\mathsf{T}} \]If you want to use subscripts like this \( \mathbf{X}_{n,p} \) you need to scape theunderscores with a backslash like so \mathbf{X}\_{n,p}:$$ \mathbf{X}\_{n,p} = \mathbf{A}\_{n,k} \mathbf{B}\_{k,p} $$will be displayed as\[ \mathbf{X}_{n,p} = \mathbf{A}_{n,k} \mathbf{B}_{k,p} \]]]></content>
+      <categories>
+        
+          <category> opinion </category>
+        
+      </categories>
+      <tags>
+        
+          <tag> resources </tag>
+        
+          <tag> jekyll </tag>
+        
+      </tags>
+      <tags></tags>
+    </entry>
+  
+</search>
